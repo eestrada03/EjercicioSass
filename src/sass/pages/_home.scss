@@ -1,3 +1,42 @@
 /* ********* */
 /* @HOME */
 /* ********* */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e6e0;
+}
+
+.contenedor {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 205px);
+  grid-template-rows: auto;
+}
+
+figure {
+  display: flex;
+  flex-direction: column-reverse;
+  border: 10px solid white;
+}
+
+figcaption {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  height: 10px;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #716f6f;
+}
+
+h4:nth-child(1) {
+  grid-column: 1/4;
+  color: #827f7f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}

@@ -1,3 +1,25 @@
 /* ********* */
 /* @VARIABLES */
 /* ********* */
+
+//Colores
+
+$cuadrados-color: (
+  a: #b6e4eb,
+  b: #d9f1f2,
+  c: #fbdee2,
+  d: #feafab,
+  e: #fbd5b0,
+  f: #fcf1d7,
+);
+
+//Asigación de colores
+
+@each $cuadrados, $color in $cuadrados-color {
+  .#{$cuadrados} {
+    background-color: $color;
+    height: 200px;
+    width: 150px;
+  }
+}
+
